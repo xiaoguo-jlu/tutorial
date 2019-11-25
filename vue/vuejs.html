@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Vue cdn</title>
+        <meta charset="utf8">
+    </head>
+    <body>
+        <div id="nav">
+            <p>
+                <h1>MVVM v-model</h1>
+                <input type="text" v-model="msg">
+                <h1>{{ msg }}</h1>
+            </p>
+            <hr>
+            <p>
+                <h1>模板语法 v-html</h1>
+                <h2 v-html="dynamicHtml"></h2>
+            </p>
+            <hr>
+            <p>
+                <h1>动态绑定 v-bind</h1>
+                <h2 v-bind="dynamicId">这个ID是动态生成的</h2>
+                <a v-bind:href="dynamicUrl">这个URL是动态生成的</a>
+            </p>
+            <hr>
+            <p>
+                <h1>js表达式</h1>
+                {{ number + 1 }}
+                {{ rowString.split(",").join("-") }}
+                <h1>注意只能执行表达式，不能执行语句</h1>
+            </p>
+            <hr>
+            <p>
+                <h1></h1>
+            </p>
+            <hr>
+        </div>
+        <script src="http://apps.bdimg.com/libs/vue/1.0.8/vue.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            new Vue({
+                el: "#nav",
+                data: {
+                    msg: "click me",
+                    dynamicHtml: "<h3>使用vue.js动态的加载的HTML<h3>",
+                    dynamicId: "dynamic",
+                    dynamicUrl: "http://www.baidu.com",
+                    number: 10,
+                    rowString: "1,2,3,4,5"
+                },
+                methods: {
+                }
+            })    
+        </script>
+    </body>
+</html>

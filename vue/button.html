@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>iview demo</title>
+    <script type="text/javascript" src="./resource/vue.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./resource/iview.css">
+    <script type="text/javascript" src="./resource/iview.min.js"></script>
+    <style>
+        #app{
+            position: absolute;
+            align-content: center;
+            left: 40%;
+            top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <i-button type="default">default</i-button>
+        <i-button type="primary">primary</i-button>
+        <i-button type="dashed">dashed</i-button>
+        <i-button type="text">text</i-button>
+        <br><br>
+        <i-button type="info">info</i-button>
+        <i-button type="success">success</i-button>
+        <i-button type="warning">waring</i-button>
+        <i-button type="error">error</i-button>
+        <br><br><br>
+
+        <i-button type="default" ghost>Default</i-button>
+        <i-button type="primary" ghost>Primary</i-button>
+        <i-button type="dashed" ghost>Dashed</i-button>
+        <i-button type="text" ghost>Text</i-button>
+        <br><br>
+        <i-button type="info" ghost>Info</i-button>
+        <i-button type="success" ghost>Success</i-button>
+        <i-button type="warning" ghost>Warning</i-button>
+        <i-button type="error" ghost>Error</i-button>
+        <br><br><br>
+
+        <i-button type="primary" shape="circle" icon="ios-search"></i-button>
+        <i-button type="primary" icon="ios-search">Search</i-button>
+        <i-button type="primary" shape="circle" icon="ios-search">Search</i-button>
+        <i-button type="primary" shape="circle">Circle</i-button>
+        <br><br><br>
+
+        <i-button-group>
+            <i-button type="primary">back
+            </i-button>
+            <i-button type="primary">forward
+            </i-button>
+        </i-button-group>
+    </div>
+<script >
+    new Vue({
+        el: '#app',
+        data: {
+
+        }
+    })
+</script>
+</body>
+</html>

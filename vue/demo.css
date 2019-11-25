@@ -1,0 +1,13 @@
+.header{
+    font-size: xx-large;
+    text-align: center;
+    color: blue;
+}
+.content{
+    font-size: large;
+    text-align: center;
+}
+.footer{
+    font-size: larger;
+    text-align: center;
+}

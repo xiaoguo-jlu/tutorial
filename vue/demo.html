@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>iview demo</title>
+    <script type="text/javascript" src="./resource/vue.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./resource/iview.css">
+    <script type="text/javascript" src="./resource/iview.min.js"></script>>
+</head>
+<body>
+    <div id="app">
+        <div class="layout">
+            <i-layout>
+                <i-header class="header">
+                    <i-tabs value="nav">
+                        <i-tab-pane label="首页">首页</i-tab-pane>
+                        <i-tab-pane label="历史">历史</i-tab-pane>
+                        <i-tab-pane label="军事">军事</i-tab-pane>
+                    </i-tabs>
+                </i-header>
+                <i-content class="content">
+                    content
+                    <tabs value="nav">
+                        <i-tab-pane label="首页">首页</i-tab-pane>
+                        <i-tab-pane label="历史">历史</i-tab-pane>
+                        <i-tab-pane label="军事">军事</i-tab-pane>
+                    </tabs>
+                </i-content>
+
+                <i-footer class="footer">footer</i-footer>
+            </i-layout>
+        </div>
+    </div>
+<script >
+    new Vue({
+        el: '#app',
+        data: {
+            categoryList: [
+                "首页",
+                "玄幻",
+                "言情",
+                "历史",
+                "军事"
+            ]
+        }
+    })
+  </script>
+</body>
+</html>
